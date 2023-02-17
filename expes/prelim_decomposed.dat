@@ -1,0 +1,32 @@
+8 cores:
+
+real	0m4,099s
+user	0m1,483s
+sys	0m2,596s
+
+
+16 cores:
+
+real	0m8,137s
+user	0m3,054s
+sys	0m5,145s
+
+
+32 cores:
+
+real	0m16,347s
+user	0m5,903s
+sys	0m10,492s
+
+64 cores:
+
+real	0m32,798s
+user	0m12,209s
+sys	0m20,650s
+
+
+128 cores:
+
+real	1m6,992s
+user	0m24,716s
+sys	0m42,261s
