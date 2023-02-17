@@ -1,11 +1,15 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<pthread.h>
+#include<string.h>
+#include<errno.h>
 
 
-#define NBPAGES 1024
+#define NBPAGES 100
+#define NBTHREADSMAX 1024
 #define NBTHREADS 100
 #define NBOPS_C 512*NBPAGES*NBTHREADS
+#define ERRORLEN 100
 
 pthread_mutex_t lock_processed_ops; 
 
@@ -13,12 +17,17 @@ struct page{
 	int array[512];
 }page;
 
-pthread_t thread_ids[NBTHREADS];
-int processed_ops; 
+pthread_t thread_ids[NBTHREADSMAX];
+long processed_ops; 
+long nbops = 0; 
 
-int process(void *nb_ops)
+
+void * process(void *nb_ops)
 {
-	struct page *myPage = malloc(1024*8*sizeof(int[512]));
+	pthread_t thread_id = pthread_self();
+	printf("Starting thread id-[%ld]\n",	thread_id);
+
+	struct page *myPage = malloc(NBPAGES*sizeof(page));
 	//initialize the array 
 	 
 	int counter = 0;
@@ -43,7 +52,7 @@ int process(void *nb_ops)
 			pthread_mutex_lock(&lock_processed_ops);
 			processed_ops +=1; 
 			pthread_mutex_unlock(&lock_processed_ops);  
-			printf("ops = %d/%d", processed_ops, (int)nb_ops); 
+			printf("thread id-[%ld]ops = %ld/%ld\n", thread_id, processed_ops, *((unsigned long *) nb_ops)); 
 		}
 
 	}
@@ -59,7 +68,8 @@ int main(int argc, char **argv)
 	int gc_ops=0;
 	int nbthreads_counter=0;
 	int threads_to_create=0;
-	int nbops = 0; 
+	char error_msg[ERRORLEN];
+	int error_num = 0;
 
 
 
@@ -75,12 +85,21 @@ int main(int argc, char **argv)
     }
 
 	threads_to_create = (argc > 1) ? atoi(argv[1]) : NBTHREADS;
-	nbops = (argc > 1) ? NBOPS_C : threads_to_create*512*NBPAGES;
+	threads_to_create = (threads_to_create > NBTHREADSMAX) ? NBTHREADSMAX : threads_to_create; 
+
+	nbops = (argc <= 1) ? NBOPS_C : threads_to_create*512*NBPAGES;
+
+	printf("Starting program with %d threads and %ld expected ops\n",threads_to_create, nbops);
+
 	while (nbthreads_counter<threads_to_create)
 	{
-		err = pthread_create(&(thread_ids[nbthreads_counter]),NULL,&process,nbops);
-		if(!err)
-			printf("\ncannott create thread :[%s]", strerror(err));
+		err = pthread_create(&(thread_ids[nbthreads_counter]),NULL, process,&nbops);
+		if(err!=0)
+		{
+			error_num = strerror_r(err,error_msg,ERRORLEN);
+			printf("\ncannott create thread.\n Reason :[%s].\n Exiting", error_msg);
+			exit(0); 
+		}
 		
 		nbthreads_counter++;
 	}
