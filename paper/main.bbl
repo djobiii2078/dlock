@@ -1,0 +1,34 @@
+\begin{thebibliography}{1}
+
+\bibitem{10.1145/3419111.3421298}
+Esmail Asyabi, Azer Bestavros, Erfan Sharafzadeh, and Timothy Zhu.
+\newblock Peafowl: In-application cpu scheduling to reduce power consumption of
+  in-memory key-value stores.
+\newblock In {\em Proceedings of the 11th ACM Symposium on Cloud Computing},
+  SoCC '20, page 150–164, New York, NY, USA, 2020. Association for Computing
+  Machinery.
+
+\bibitem{10.1145/3466752.3480098}
+Ki-Dong Kang, Gyeongseo Park, Hyosang Kim, Mohammad Alian, Nam~Sung Kim, and
+  Daehoon Kim.
+\newblock Nmap: Power management based on network packet processing mode
+  transition for latency-critical workloads.
+\newblock In {\em MICRO-54: 54th Annual IEEE/ACM International Symposium on
+  Microarchitecture}, MICRO '21, page 143–154, New York, NY, USA, 2021.
+  Association for Computing Machinery.
+
+\bibitem{KARPOWICZ2018302}
+Michał~P. Karpowicz, Piotr Arabas, and Ewa Niewiadomska-Szynkiewicz.
+\newblock Design and implementation of energy-aware application-specific cpu
+  frequency governors for the heterogeneous distributed computing systems.
+\newblock {\em Future Generation Computer Systems}, 78:302--315, 2018.
+
+\bibitem{10.1145/3343737.3343740}
+Erfan Sharafzadeh, Seyed Alireza~Sanaee Kohroudi, Esmail Asyabi, and Mohsen
+  Sharifi.
+\newblock Yawn: A cpu idle-state governor for datacenter applications.
+\newblock In {\em Proceedings of the 10th ACM SIGOPS Asia-Pacific Workshop on
+  Systems}, APSys '19, page 91–98, New York, NY, USA, 2019. Association for
+  Computing Machinery.
+
+\end{thebibliography}

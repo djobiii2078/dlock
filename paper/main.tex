@@ -1,0 +1,170 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Template for USENIX papers.
+%
+% History:
+%
+% - TEMPLATE for Usenix papers, specifically to meet requirements of
+%   USENIX '05. originally a template for producing IEEE-format
+%   articles using LaTeX. written by Matthew Ward, CS Department,
+%   Worcester Polytechnic Institute. adapted by David Beazley for his
+%   excellent SWIG paper in Proceedings, Tcl 96. turned into a
+%   smartass generic template by De Clarke, with thanks to both the
+%   above pioneers. Use at your own risk. Complaints to /dev/null.
+%   Make it two column with no page numbering, default is 10 point.
+%
+% - Munged by Fred Douglis <douglis@research.att.com> 10/97 to
+%   separate the .sty file from the LaTeX source template, so that
+%   people can more easily include the .sty file into an existing
+%   document. Also changed to more closely follow the style guidelines
+%   as represented by the Word sample file.
+%
+% - Note that since 2010, USENIX does not require endnotes. If you
+%   want foot of page notes, don't include the endnotes package in the
+%   usepackage command, below.
+% - This version uses the latex2e styles, not the very ancient 2.09
+%   stuff.
+%
+% - Updated July 2018: Text block size changed from 6.5" to 7"
+%
+% - Updated Dec 2018 for ATC'19:
+%
+%   * Revised text to pass HotCRP's auto-formatting check, with
+%     hotcrp.settings.submission_form.body_font_size=10pt, and
+%     hotcrp.settings.submission_form.line_height=12pt
+%
+%   * Switched from \endnote-s to \footnote-s to match Usenix's policy.
+%
+%   * \section* => \begin{abstract} ... \end{abstract}
+%
+%   * Make template self-contained in terms of bibtex entires, to allow
+%     this file to be compiled. (And changing refs style to 'plain'.)
+%
+%   * Make template self-contained in terms of figures, to
+%     allow this file to be compiled. 
+%
+%   * Added packages for hyperref, embedding fonts, and improving
+%     appearance.
+%   
+%   * Removed outdated text.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[sigplan,review,10pt]{acmart}
+\renewcommand\footnotetextcopyrightpermission[1]{}
+
+% to be able to draw some self-contained figs
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{xspace}
+
+% inlined bib file
+\usepackage{filecontents}
+
+%-------------------------------------------------------------------------------
+\begin{filecontents}{\jobname.bib}
+%-------------------------------------------------------------------------------
+@Book{arpachiDusseau18:osbook,
+  author =       {Arpaci-Dusseau, Remzi H. and Arpaci-Dusseau Andrea C.},
+  title =        {Operating Systems: Three Easy Pieces},
+  publisher =    {Arpaci-Dusseau Books, LLC},
+  year =         2015,
+  edition =      {1.00},
+  note =         {\url{http://pages.cs.wisc.edu/~remzi/OSTEP/}}
+}
+@InProceedings{waldspurger02,
+  author =       {Waldspurger, Carl A.},
+  title =        {Memory resource management in {VMware ESX} server},
+  booktitle =    {USENIX Symposium on Operating System Design and
+                  Implementation (OSDI)},
+  year =         2002,
+  pages =        {181--194},
+  note =         {\url{https://www.usenix.org/legacy/event/osdi02/tech/waldspurger/waldspurger.pdf}}}
+\end{filecontents}
+
+\newcommand{\solname}{\textsc{Dlock}\xspace}
+\newcommand{\neurl}{\textsc{Neutral recombine}\xspace}
+\newcommand{\neur}{\textsc{Neur}\xspace}
+
+%-------------------------------------------------------------------------------
+\begin{document}
+%-------------------------------------------------------------------------------
+
+%don't want date printed
+\date{}
+
+% make title bold and 14 pt font (Latex default is non-bold, 16 pt)
+\title{\solname: Unlocking systems with the \neur approach}
+
+%for single author (just remove % characters)
+\author{
+{\rm Blind submission}
+% copy the following lines to add more authors
+% \and
+% {\rm Name}\\
+%Name Institution
+} % end author
+
+
+%-------------------------------------------------------------------------------
+\begin{abstract}
+%-------------------------------------------------------------------------------
+%Several systems maintain a shared state where several actors update the shared state (writers) and other actors 
+%read (readers) from this shared state. 
+%For example, a socket opened to several clients maintaining the number of active connections. 
+%To ensure coherence between the different readers and writers, locking is essential. 
+%Locking allows a writer to enter a critical section to update the shared state while other actors wait the completion 
+%of its update. 
+%Despite ensuring coherence and preventing inconsistency, locking comes with several shortcomings among which the waiting time
+%of the different actors when one hold the lock. 
+
+Several systems maintain a shared state between several writers and readers
+where writers' execution flow is independent of the shared state, and the shared state 
+update concern simple arithmetric operations.
+For example, incrementing the number of read block requests in the Linux kernel. 
+
+In this paper, we present \neurl (\neur) a novel mechanism to ensure consistency for the shared state without 
+requiring locks or transactions. 
+With \neur, instead of waiting for a lock holder, writers perform their arithmetic operation on the neutral element of the arithmetic operation and buffer the result.
+Then, the different writers results are recombined to get the shared state which readers can retrieve. 
+Compared to locking mechanims, \neur does not require waiting for a lock holder completion and is priority inversion free. 
+%maybe reduces cache pollution
+%should be evaluated
+To ease \neur adoption and show its advantages, we built \solname.
+\solname is a tool that parses the source code of 
+a project and by feeding it with locks primitives definition, 
+detects code sections using locks in a context that matches \texttt{NEUR} scope usage, and transforms the code 
+to apply the \neur approach.
+\solname also introduces a garbage collector to free writers local copy.
+
+We apply \solname on crafted applications and real systems such as the Linux kernel, Zookeeper, HiBench, and Memcached.
+Our evaluations show that the \solname generated versions achieve up to $xxx\times$ better throughput and execute up to $xxx\times$ faster 
+for different configurations due to the \neur approach. 
+
+
+%\textcolor{red}{Enchainer sur le problème d'opacités des VMs-unikernels ---- usecase chain of function and discussions about identifying idle tasks from processes in the kernel.}
+
+\end{abstract}
+
+\settopmatter{printfolios=true}
+\maketitle
+\pagestyle{plain}
+
+\input{introduction}
+\input{background}
+\input{problem}
+\input{design}
+\input{evaluation}
+\input{discussion}
+\input{rw}
+\input{conclusion}
+
+%-------------------------------------------------------------------------------
+\bibliographystyle{plain}
+\bibliography{main}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%  LocalWords:  endnotes includegraphics fread ptr nobj noindent
+%%  LocalWords:  pdflatex acks
