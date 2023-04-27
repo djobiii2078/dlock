@@ -10,6 +10,9 @@ do
    do
 	grep "Writer exectime" result_"$counter"_"$value"_thread | awk -F' ' '{print $2}' | awk -F':' '{print $2}' > exectime_$counter
 	grep "locktime" result_"$counter"_"$value"_thread | awk -F' ' '{print $2}' | awk -F':' '{print $2}' > locktime_$counter
+	grep "ReaderInnerMetric execTime" result_"$counter"_"$value"_thread | awk -F' ' '{print $2}' | awk -F':' '{print $2}' > reader_exectime_$counter
+	grep "ReaderInnerMetric execTime" result_"$counter"_"$value"_thread | awk -F' ' '{print $3}' | awk -F':' '{print $2}' > reader_locktime_$counter
+	grep "ReaderFinalMetric execTime" result_"$counter"_"$value"_thread | awk -F' ' '{print $2}' | awk -F':' '{print $2}' > readerfinal_exectime_$counter
    done
    cd ..
 done
