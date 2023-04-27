@@ -1,0 +1,2003 @@
+{
+    "conformsTo": "https://project-open-data.cio.gov/v1.1/schema",
+    "describedBy": "https://project-open-data.cio.gov/v1.1/schema/catalog.json",
+    "@context": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld",
+    "@type": "dcat:Catalog",
+    "dataset": [{
+            "@type": "dcat:Dataset",
+            "title": "7(a) & 504 Activity Reports",
+            "description": "SBA 7(a) and 504 activity current month and previous fiscal year data",
+            "modified": "2022-12-07T14:36:27.552Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCA-2022-12-001",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua Dykema",
+                "hasEmail": "mailto:joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/activity-reports-fy2022",
+                    "title": "7(a) & 504 Activity Reports: FY2022 Year End"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/lender-activity-reports",
+                    "title": "7(a) & 504 Activity Reports: Current Month"
+                }
+            ],
+            "keyword": ["504", "7a", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:001"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Bureau IT Leadership Directory",
+            "description": "A directory of all SBA officials with the title of CIO or duties of a CIO.",
+            "modified": "2023-01-11T16:38:28.823Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCIO-2015-08-001",
+            "landingPage": "https://www.sba.gov/about-sba/open-government/digital-sba",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Melvin Brown",
+                "hasEmail": "mailto:melvin.brown@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/about-sba/open-government/digital-sba#section-header-3",
+                    "title": "Bureau IT Leadership Directory"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "title": "Bureau IT Leadership Directory Json",
+                    "downloadURL": "https://inventory.data.gov/dataset/c2d67157-e134-4837-a13e-3d92fc7a7d40/resource/de194217-221f-4df8-bec0-7225fa017137/download/bureaudirectory.json"
+                }
+            ],
+            "keyword": ["Bureau IT Leadership Directory"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "CIO Governance Board Membership List",
+            "description": "Information about SBA CIO\u2019s membership in governance boards.",
+            "modified": "2023-01-12T14:51:16.477Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCIO-2015-08-003",
+            "landingPage": "https://www.sba.gov/about-sba/sba-performance/open-government/digital-sba/digital-strategy/governance-board-membership",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Asghar Noor",
+                "hasEmail": "mailto:asghar.noor@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/about-sba/sba-performance/open-government/digital-sba/digital-strategy/governance-board-membership",
+                    "title": "CIO Governanace Board"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "title": "CIO Governance Board Membership List",
+                    "downloadURL": "https://inventory.data.gov/dataset/93f8387a-c85d-467d-9410-52e16e544a86/resource/b55a6342-78fb-4de7-9654-ee0ac95583fe/download/governanceboardschema.json"
+                }
+            ],
+            "keyword": ["CIO role on program governance boards"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Community Navigator Pilot Program Grantees",
+            "description": "The Community Navigator Pilot Program supports a network of organizations committed to serving small businesses and entrepreneurs in underserved communities.\nThis network uses a 'Hub and Spoke' model: a centralized 'Hub' coordinates and supports local 'Spoke' organizations on the ground. \nThe attached spreadsheet contains lists of Hub and Spoke organizations:\nOn the 'Hubs' tab, each Hub has a link to its website. Note that some Hubs may be located in one city or state, but support Spokes that serve a wider region.\nOn the 'Spokes' tab, each Spoke is connected to its Hub.\nEach of the 51 Community Navigator projects falls into one of three tiers, related to the geographic reach of that project:\nTier 1 - national level:\n(8 awards, max $5M per award)\nOrganizations support a minimum of five service areas (not within the same state), containing a population greater than 500,000.\nTier 2 - state/local level:\n(11 awards, max $2.5M per award)\nOrganizations support an individual state, region, municipality, or city with total service population of greater than or equal to 500,000.\nTier 3 - local level:\n(32 awards, max $1M per award)\nOrganizations support a region, municipality, city, tribal or rural community with total service population of less than 500,000.",
+            "modified": "2022-09-21T13:30:40.762Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OED-2022-09-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Benjamin Selden",
+                "hasEmail": "mailto:benjamin.selden@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/support-community-navigator-pilot-program-grantees",
+                    "title": "Community Navigator Pilot Program Grantees List"
+                }
+            ],
+            "keyword": ["CNPP", "COVID-19", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Subcontracting Network (SubNet) System",
+            "description": "SubNet is the Small Business Administration\u2019s (SBA) Subcontracting Network System that bridges the gap between businesses seeking small business (SB) subcontractors and SB seeking subcontracting opportunities by facilitating the matching of SB with subcontracting opportunities. SubNet allows all who has solicitations; notices of sources sought and outreach events for SB participation to post it for maximum exposure.",
+            "modified": "2018-05-26",
+            "accessLevel": "public",
+            "identifier": "SBA-GCBD-2018-08-002",
+            "landingPage": "https://eweb1.sba.gov/subnet/client/dsp_Landing.cfm",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Angela B. Terry",
+                "hasEmail": "mailto:angela.terry@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://eweb1.sba.gov/subnet/client/dsp_Landing.cfm",
+                    "title": "Subcontracting Network (SubNet) System",
+                    "description": "SubNet is the Small Business Administration\u2019s (SBA) Subcontracting Network System that bridges the gap between businesses seeking small business (SB) subcontractors and SB seeking subcontracting opportunities by facilitating the matching of SB with subcontracting opportunities. SubNet allows all who has solicitations; notices of sources sought and outreach events for SB participation to post it for maximum exposure."
+                }
+            ],
+            "keyword": ["SB awards", "SBA", "Small Business subcontracting", "SubNet", "subcontract", "subcontracting opportunities"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "theme": ["public search tool", "subcontracting opportunities"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Restaurant Revitalization Fund (RRF) FOIA",
+            "description": "SBA Coronavirus (COVID-19) Relief Options: Restaurant Revitalization Fund (RRF) Report and Data",
+            "modified": "2022-11-18T17:55:56.481Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCA-2022-09-001",
+            "describedBy": "https://view.officeapps.live.com/op/view.aspx?src=https%3A%2F%2Fdata.sba.gov%2Fdataset%2F8a57ad77-fcda-4272-8020-754f1cf3607b%2Fresource%2F0159a636-3d6c-4de9-85ca-76ef322d75ba%2Fdownload%2Frrf-foia-data-dictionary.xlsx&wdOrigin=BROWSELINK",
+            "describedByType": "application/vnd.ms-excel",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua C Dykema",
+                "hasEmail": "mailto:joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report-restaurant-revitalization-fund-reports",
+                    "title": "Restaurant Revitalization Fund (RRF) Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/rrf-foia",
+                    "title": "Restaurant Revitalization Fund (RRF) FOIA Data"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Restaurant Revitalization Fund (RRF) FOIA Data Dictionary",
+                    "downloadURL": "https://data.sba.gov/dataset/8a57ad77-fcda-4272-8020-754f1cf3607b/resource/0159a636-3d6c-4de9-85ca-76ef322d75ba/download/rrf-foia-data-dictionary.xlsx"
+                }
+            ],
+            "keyword": ["COVID-19", "RRF", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA 7(a) and 504 Loan Data Reports",
+            "description": "SBA 7(a) and 504 loan data reports for loans approved since FY1991.",
+            "modified": "2022-10-03T14:09:35.379Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OHA-2016-08-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua Dykema",
+                "hasEmail": "mailto:joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/7-a-504-foia",
+                    "title": "SBA 7(a) and 504 Loan Data Reports",
+                    "description": "SBA 7(a) and 504 loan data reports for loans approved since FY1991."
+                }
+            ],
+            "keyword": ["504 Loan Data Reports", "7a", "Loan Data Report", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Disaster Loan Data",
+            "description": "SBA Disaster Loan Data provides verified loss and approved loan amount totals for both home and business disaster loans, segmented by city, county, zip code and state.",
+            "modified": "2022-12-07T16:27:18.909Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ODA-2022-09-002",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Alejandro Contreras",
+                "hasEmail": "mailto:alejandro.contreras@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/disaster-loan-data",
+                    "title": "SBA Disaster Loan Data"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/sites/default/files/2021-05/SBA_Disaster_Loan_Data_FY20_0.xlsx",
+                    "title": "SBA Disaster Loan Data FY20"
+                }
+            ],
+            "keyword": ["SBA", "business loan", "disaster assistance", "disaster loan", "disaster recovery", "economic injury", "home loan"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:017"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Disaster Loan Data - Superstorm Sandy",
+            "description": "SBA Disaster Loan Data for Superstorm Sandy provides verified loss and approved loan amount totals for both home and business disaster loans, segmented by city, county, zip code and state.",
+            "modified": "2023-01-12T14:47:20.725Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ODA-2014-11-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Alejandro Contreras",
+                "hasEmail": "mailto:alejandro.contreras@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "SBA_Disaster_Loan_Data for Superstorm_Sandy",
+                    "downloadURL": "https://data.sba.gov/dataset/e28c240c-f868-484b-b919-31ac602f250b/resource/0cc4a8b8-118a-4b95-a025-ef564d2f58cd/download/cusersssperrydocumentsckansba_disaster_loan_data_superstorm_sandy-1.xlsx"
+                }
+            ],
+            "keyword": ["Hurricane Sandy", "SBA", "Superstorm Sandy", "business loan", "disaster assistance", "disaster loan", "disaster recovery", "economic injury", "home loan"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:017"],
+            "language": ["en-US"],
+            "theme": ["SBA", "disaster loan", "Hurricane Sandy", "Superstorm Sandy", "disaster assistance", "disaster recovery", "home loan", "business loan", "economic injury"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Economic Injury Disaster Loan (EIDL) Advances",
+            "description": "SBA Coronavirus (COVID-19) Relief Options: Economic Injury Disaster Loan (EIDL) Advances Report and Data",
+            "modified": "2022-09-02T19:14:47.290Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ODA-2022-08-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Alejandro Contreras",
+                "hasEmail": "mailto:alejandro.contreras@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/funding-programs/loans/covid-19-relief-options/eidl/eidl-data",
+                    "title": "SBA Economic Injury Disaster Loan (EIDL) Advances Report",
+                    "description": "SBA Coronavirus (COVID-19) Relief Options: Economic Injury Disaster Loan (EIDL) Advances Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/covid-19-eidl-advance",
+                    "title": "SBA Economic Injury Disaster Loan (EIDL) Advances Data",
+                    "description": "SBA Coronavirus (COVID-19) Relief Options: Economic Injury Disaster Loan (EIDL) Advances Data"
+                }
+            ],
+            "keyword": ["COVID-19", "EIDL", "SBA", "disaster assistance", "disaster loan", "economic injury"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:017"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Economic Injury Disaster Loan (EIDL) Loan",
+            "description": "SBA Coronavirus (COVID-19) Relief Options: Economic Injury Disaster Loan (EIDL) Loans Report",
+            "modified": "2022-10-04T17:15:37.572Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ODA-2022-08-002",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Alejandro Contreras",
+                "hasEmail": "mailto:alejandro.contreras@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/funding-programs/loans/covid-19-relief-options/eidl/eidl-data",
+                    "format": "HTML",
+                    "title": "COVID-19 EIDL Reports",
+                    "description": "Reports about the COVID-19 EIDL programs"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/covid-19-eidl",
+                    "format": "HTML",
+                    "title": "COVID-19 EIDL Data",
+                    "description": "COVID-19 Economic Injury Disaster Loan Data"
+                }
+            ],
+            "keyword": ["COVID-19", "EIDL", "SBA", "disaster assistance", "disaster loan", "economic injury"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:017"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Enterprise Datasets",
+            "description": "Provides a list of all the datasets available in the Enterprise Data Inventory for the Small Business Administration.",
+            "modified": "2023-01-18T15:17:45.018Z",
+            "accessLevel": "public",
+            "identifier": "SBA-EDI-2015-02-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Ling Shi",
+                "hasEmail": "mailto:Ling.shi@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "title": "Data.json",
+                    "downloadURL": "https://www.sba.gov/data.json"
+                }
+            ],
+            "keyword": ["JSON", "data", "dataset", "public", "sba", "small business"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA FITARA Implementation Plan",
+            "description": "Federal Information Technology Acquisition Reform Act (FITARA) enhances the  responsibility and authority of agency CIOs so as to increase their efficiency in managing and overseeing IT resources and assets. These responsibilities and authorities include, but are not limited to: IT portfolio review; budget formulation and approval of IT budgets; CIO appointing authority; enhanced transparency and risk management of IT investments; IT workforce planning; strategic sourcing; and consistency in reporting to strengthen accountability and manage cost, schedule, and performance measures for IT programs. \r\n\r\nSBA\u2019s FITARA Implementation Plan describes the policies, processes, and guidance that require updates or revisions to meet Office of Management and Budget (OMB) objectives and comply with FITARA requirements.",
+            "modified": "2020-05-31",
+            "accessLevel": "public",
+            "identifier": "SBA-OCIO-2016-02-001",
+            "issued": "2019-11-30",
+            "landingPage": "https://www.sba.gov/document/report--digital-strategy-report",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Melvin Brown",
+                "hasEmail": "mailto:melvin.brown@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/policy-guidance--sba-fitara-implementation-plan",
+                    "title": "SBA FITARA Implementation Plan"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "format": "JSON",
+                    "title": "SBA FITARA Milestones",
+                    "downloadURL": "https://inventory.data.gov/dataset/15c174dc-d228-41d2-a5d3-3a7731be34a1/resource/298f8f0b-a31f-48e2-b2f4-508b044465e8/download/fitaramilestones.json"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "text/csv",
+                    "title": "SBA's FITARA milestones file in CSV format",
+                    "description": "SBA's FITARA milestones file in CSV format",
+                    "downloadURL": "https://inventory.data.gov/dataset/15c174dc-d228-41d2-a5d3-3a7731be34a1/resource/10d0cbe6-adcd-4fdc-8ef8-df4b2a52cecb/download/fitaramilestones.csv"
+                }
+            ],
+            "keyword": ["FITARA", "Federal Information Technology Acquisition Reform", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA IT Reform Cost Savings/Avoidance",
+            "description": "IT Reform Cost Savings/Avoidance for the Small Business Administration provides information about cost savings and/or avoidances realized from IT reforms.  Cost savings/avoidance are reported per OMB Circular A-131. Cost savings represent reductions in actual expenditures below the projected level of costs to achieve a specific objective. Cost avoidance represents an action taken in the immediate time frame that will decrease costs in the future. The file contains only PortfolioStat and FDCCI savings/avoidances reported by SBA in OMB\u2019s Information Technology Oversight and Reform  (ITOR) report to date.",
+            "modified": "2022-08-17T16:15:29.158Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCIO-2015-11-001",
+            "issued": "2019-11-30",
+            "landingPage": "https://www.sba.gov/about-sba/open-government/digital-sba#section-header-7",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Melvin Brown",
+                "hasEmail": "mailto:melvin.brown@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "title": "SBA IT Reform Cost Savings/Avoidance",
+                    "downloadURL": "https://inventory.data.gov/dataset/fb14072a-44fb-485a-bd67-f8950444896d/resource/a25af1dc-a56a-42e2-a5d1-cda287546361/download/costsavings.json"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/about-sba/open-government/digital-sba#section-header-7",
+                    "title": "SBA IT Reform Cost Savings"
+                }
+            ],
+            "keyword": ["Avoidance", "Cost", "Cost Avoidance", "Cost Savings", "IT Reform", "Portfoliostat", "SBA", "Savings"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Lending Statistics for Major Programs",
+            "description": "This report provides statistics on Year to Date (YTD) SBA Business Loan Approval Activity comparisons for Fiscal Years",
+            "modified": "2022-09-15T19:44:28.931Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCA-2022-08-001",
+            "landingPage": "https://www.sba.gov/document?search=weekly%20lending%20reports&documentType=Report",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua Dykema",
+                "hasEmail": "mailto:Joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document?search=weekly%20lending%20reports&documentType=Report",
+                    "title": "SBA Weekly Lending Reports"
+                }
+            ],
+            "keyword": ["Lending", "SBA", "loan"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:001"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Administration (SBA) Loan Program Performance",
+            "description": "Reflects total recovery rates, as a percent of the purchase amounts by purchase year, for the four large guarantied programs and an aggregate total for the small guarantied programs.",
+            "modified": "2023-01-24T15:15:03.315Z",
+            "accessLevel": "public",
+            "identifier": "SBA-CFO-2015-05-001",
+            "landingPage": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "accrualPeriodicity": "R/P3M",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Lala Lunstrum",
+                "hasEmail": "mailto:lala.lunstrum@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Total Recovery Rates for Guarantied Programs by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Charge Off Rates as a Percent of Unpaid Principal Balance (UPB) Amount by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Purchase Rates as a Percent of Unpaid Principal Balance (UPB) Amount by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Post-Charge Off Recovery Amount by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Total Recovery Amount for Guarantied Programs by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Charge Off Amount by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Purchase Amount by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Number of Approved Loans by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Gross Approval Amount by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Unpaid Principal Balance by Program"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/report--small-business-administration-loan-program-performance",
+                    "title": "Post-Charge Off Recovery Rates by Program"
+                }
+            ],
+            "keyword": ["Loan", "Loan Balance", "Loan Performance", "Recoveries", "Recovery rates", "loss rates", "recovery percentage"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:002"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Paycheck Protection Program (PPP) Loan",
+            "description": "SBA Coronavirus (COVID-19) Relief Options: Paycheck Protection Program (PPP) Report and Data",
+            "modified": "2022-09-08T19:44:00.188Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCA-2022-07-001",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua Dykema",
+                "hasEmail": "mailto:Joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/funding-programs/loans/covid-19-relief-options/paycheck-protection-program/ppp-data",
+                    "format": "PDF",
+                    "title": "SBA Paycheck Protection Program (PPP) Loan Reports",
+                    "description": "SBA Coronavirus (COVID-19) Relief Options: Paycheck Protection Program (PPP) Reports"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/ppp-foia",
+                    "title": "SBA Paycheck Protection Program (PPP) Loan Data",
+                    "description": "SBA Coronavirus (COVID-19) Relief Options: Paycheck Protection Program (PPP)"
+                }
+            ],
+            "keyword": ["COVID-19", "PPP", "Paycheck Protection Program", "SBA", "lending"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:001"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Public Datasets",
+            "description": "Provides a list of all the datasets available in the Public Data Inventory for the Small Business Administration.",
+            "modified": "2015-05-20",
+            "accessLevel": "public",
+            "identifier": "SBA-PDL-2015-02-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Asghar Noor",
+                "hasEmail": "mailto:asghar.noor@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "title": "Data.json",
+                    "downloadURL": "https://www.sba.gov/data.json"
+                }
+            ],
+            "keyword": ["data", "dataset", "json", "public", "sba", "small business administration"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Shuttered Venue Operators Grantees",
+            "description": "SBA Coronavirus (COVID-19) Relief Options: Shuttered Venue Operators Grantees Report and Data",
+            "modified": "2022-10-03T17:40:08.648Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ODA-2022-09-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Allison E. Barret",
+                "hasEmail": "mailto:allison.barret@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/funding-programs/loans/covid-19-relief-options/shuttered-venue-operators-grant/svog-data",
+                    "title": "Shuttered Venue Operators Grantees Program Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://data.sba.gov/dataset/svog",
+                    "title": "Shuttered Venue Operators Grantees Data",
+                    "description": "Recipients of the Shuttered Venue Operators Grant"
+                }
+            ],
+            "keyword": ["COVID-19", "SBA", "SVOG"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Lending in the United States-2017",
+            "description": "Small business lending from bank lenders remained positive in 2017, but a slower pace than the previous year.  The research report by the Office of Advocacy examines FDIC data to find that small banks devoted larger shares of their assets to small business loans, while large banks issued a higher total volume of small business loans. The report covers all small business loans (commercial loans of $1 million or less) and is not specific to SBA-guaranteed loans. It contains detailed appendix tables with information on small business loans outstanding and loan originations for all reporting banks by state. These tables also provide state rankings of bank lenders by small business lending ratios.",
+            "modified": "2022-12-22T15:59:47.579Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-007",
+            "issued": "2020-01-29",
+            "landingPage": "https://advocacy.sba.gov/2020/01/29/small-business-lending-in-the-united-states-2017/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Vicky Williams",
+                "hasEmail": "mailto:kossolnike.jackson@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/01/28154019/Small-Business-Lending-in-the-US-2017.pdf",
+                    "title": "Full Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/01/28171119/Summary-Small-Business-Lending-in-the-US-20175.pdf",
+                    "title": "Research Summary"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/01/28153947/Appendix_Data_Description.pdf",
+                    "title": "Appendix Data Description"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/01/28152825/Appendix_Tables_17.pdf",
+                    "title": "Appendix Tables PDF Format"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2020/01/29/small-business-lending-in-the-united-states-2017/",
+                    "title": "Appendix Tables Excel Format"
+                }
+            ],
+            "keyword": ["2017", "SBA", "Small business lending", "commercial banks", "lending", "loan", "savings", "savings banks"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Lending In The United States - 2019",
+            "description": "Advocacy\u2019s small business lending report examines FDIC data to determine the state of bank lending to small businesses. Between June 2017 and June 2019, small business lending remained positive, though below the increase in lending to large businesses. This report examines all small business loans (commercial loans valued at $1 million or less) and is not specific to SBA-guaranteed loans. The data in the report provides a snapshot of the credit market before the beginning of the COVID-19 pandemic. In addition, the appendix tables provide rankings of top bank lenders by small business lending ratios.  This year, detailed state tables are provided to spotlight the small business lending activity in each state.",
+            "modified": "2023-01-12T15:00:03.921Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-006",
+            "issued": "2020-09-10",
+            "landingPage": "https://advocacy.sba.gov/2020/09/10/small-business-lending-in-the-united-states-2019/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Vicky Williams",
+                "hasEmail": "mailto:kossolnike.jackson@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/09/10092858/Report-2019-Small-Business-Lending-Report.pdf",
+                    "title": "Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/09/10092920/Research-Summary-Small-Business-Lending-In-The-United-States-2019.pdf",
+                    "title": "Research Summary"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/09/10092934/State-Tables-SBL-Report.pdf",
+                    "title": "State Tablles"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/09/10092850/SBL-Appendix-Tables-Data-Description.pdf",
+                    "title": "Appendix Table Description"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2020/09/10092856/Appendix-Tables-PDF-2019.pdf",
+                    "title": "Appendix Table PDF"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2020/09/10/small-business-lending-in-the-united-states-2019/",
+                    "title": "Appendix Table Excel"
+                }
+            ],
+            "keyword": ["2019", "Small business lending", "commercial banks", "lending", "loan", "savings", "savings banks", "sba"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Lending in the United States-2020",
+            "description": "Advocacy\u2019s small business lending report examines FDIC data to determine the state of bank lending to small businesses. This report, which analyzes loan data from June 2019 to June 2020, examines the small business lending market at the beginning of the COVID-19 pandemic. Small business loans (loans below $1 million) increased by nearly 40% from 2019 to 2020, largely due to the newly enacted Paycheck Protection Program. \nAlongside the report, the appendix tables provide bank level detail of small business lending activity and breakdowns at the state level.",
+            "modified": "2022-12-22T16:00:44.115Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-005",
+            "issued": "2022-07-12",
+            "landingPage": "https://advocacy.sba.gov/2022/07/12/small-business-lending-in-the-united-states-2020/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Vicky Williams",
+                "hasEmail": "mailto:kossolnike.jackson@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2022/07/12095600/2020-Small-Business-Lending-Report-508c.pdf",
+                    "title": "2020 Small Summary Lending Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2022/07/12095600/Small-Business-Lending-Research-Summary-508c.pdf",
+                    "title": "Small Business Lending Research Summary"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2022/07/12095559/Banking-Study-appendixes-508c.pdf",
+                    "title": "Banking Study Appendix Table Description"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Appendix Table Excel",
+                    "downloadURL": "https://advocacy.sba.gov/2022/07/12/small-business-lending-in-the-united-states-2020/"
+                }
+            ],
+            "keyword": ["2020", "SBA", "Small business lending", "commercial banks", "lending", "loan", "savings", "savings banks"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Procurement Scorecard Overview",
+            "description": "The annual Small Business Procurement Scorecard is an assessment tool to (1) measure how well federal agencies reach their small business and socio-economic prime contracting and subcontracting goals, (2) provide accurate and transparent contracting data and (3) report agency-specific progress. The prime and subcontracting component goals include goals for small businesses, small businesses owned by women (WOSB), small disadvantaged businesses (SDB), service-disabled veteran-owned small businesses (SDVOSB), and small businesses located in Historically Underutilized Business Zones (HUBZones).  Each federal agency has a different small business contracting goal, negotiated annually in consultation with SBA. SBA ensures that the sum  total of all of the goals meets the 23 percent target established by law.",
+            "modified": "2022-09-02T18:01:44.129Z",
+            "accessLevel": "public",
+            "identifier": "SBA-GCBD-2022-09-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Mihaela Ciorneiu",
+                "hasEmail": "mailto:Mihaela.Ciorneiu@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/support-small-business-procurement-scorecard-overview",
+                    "title": "Small Business Procurement Scorecard Overview"
+                }
+            ],
+            "keyword": ["Procurement", "SBA", "Scorecard", "Small Business"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the Congressional Districts - 2019",
+            "description": "The congressional district profiles are part of Advocacy\u2019s state profile series, which provides user-friendly snapshots of national, state, and congressional district small business statistics.  The district profiles focus on the impact of small employers. Each profile provides the district\u2019s total number of small employers and their industry breakout, plus the number of people employed and payroll expended. The profiles also show the total number of self-employed workers and a map showing how they are distributed in the district.",
+            "modified": "2022-12-22T15:26:40.223Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2019-11-001",
+            "issued": "2019-09-11",
+            "landingPage": "https://advocacy.sba.gov/2019/09/11/2019-congressional-district-profiles/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "accrualPeriodicity": "R/P1Y",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2019/09/11/2019-congressional-district-profiles/",
+                    "title": "2019 Small Business Profiles for the Congressional Districts"
+                }
+            ],
+            "keyword": ["2019", "SBA", "congressional district", "profiles", "small business", "state"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["us-EN"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the Congressional Districts - 2020",
+            "description": "The congressional district profiles are part of Advocacy\u2019s state profile series, which provides user-friendly snapshots of national, state, and congressional district small business statistics.  The district profiles focus on the impact of small employers. Each profile provides the district\u2019s total number of small employers and their industry breakout, plus the number of people employed and payroll expended. The profiles also show the total number of self-employed workers and a map showing how they are distributed in the district.",
+            "modified": "2022-12-22T15:28:23.415Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2020-08-058",
+            "issued": "2020-08-25",
+            "landingPage": "https://advocacy.sba.gov/2020/08/25/2020-small-business-profiles-for-congressional-districts/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "accrualPeriodicity": "R/P1Y",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "text/html",
+                    "title": "2020 Small Business Profiles for the Congressional Districts",
+                    "downloadURL": "https://advocacy.sba.gov/2020/08/25/2020-small-business-profiles-for-congressional-districts/"
+                }
+            ],
+            "keyword": ["2020", "SBA", "congressional district", "profiles", "small business", "state"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["us-EN"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the Congressional Districts - 2021",
+            "description": "The congressional district profiles are part of Advocacy\u2019s state profile series, which provides user-friendly snapshots of national, state, and congressional district small business statistics.  The district profiles focus on the impact of small employers. Each profile provides the district\u2019s total number of small employers and their industry breakout, plus the number of people employed and payroll expended. The profiles also show the total number of self-employed workers and a map showing how they are distributed in the district.",
+            "modified": "2022-12-22T15:30:14.399Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-001",
+            "issued": "2021-12-29",
+            "landingPage": "https://advocacy.sba.gov/2021/12/29/2021-small-business-profiles-for-congressional-districts/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "text/html",
+                    "title": "2021 Small Business Profiles for the Congressional Districts",
+                    "downloadURL": "https://advocacy.sba.gov/2021/12/29/2021-small-business-profiles-for-congressional-districts/"
+                }
+            ],
+            "keyword": ["2021", "SBA", "congressional district", "profiles", "small business", "state"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2009",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and self-employment by county, and small businesses by industry.",
+            "modified": "2022-12-22T15:39:41.558Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-004",
+            "issued": "2010-01-01",
+            "landingPage": "https://advocacy.sba.gov/2010/01/01/2009-small-business-profiles-for-the-states-and-territories/",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2010/01/01/2009-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2009 Small Business Profiles For The States And Territories"
+                }
+            ],
+            "keyword": ["2009", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2010",
+            "description": "latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and self-employment by county, and small businesses by industry.",
+            "modified": "2022-12-22T15:40:42.774Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-003",
+            "issued": "2011-01-01",
+            "landingPage": "https://advocacy.sba.gov/2011/01/01/2010-small-business-profiles-for-the-states-and-territories/",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2011/01/01/2010-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2010 Small Business Profiles For The States And Territories"
+                }
+            ],
+            "keyword": ["2010", "SBA", "all states", "borrowing", "exporting", "states", "territories"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2014",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles for the States and Territories are an annual analysis of each state\u2019s small business activities. They provide information on small business employment, industry composition, small business borrowing, exporting, and survival rates, as well as business owner demographics. The profiles provide information for the 50 states, the District of Columbia, the U.S. territories, and the United States. Detailed historical data may be found in the Small Business Economy.",
+            "modified": "2022-12-22T15:41:51.306Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2015-11-001",
+            "issued": "2015-02-04",
+            "landingPage": "https://advocacy.sba.gov/2015/02/04/2014-small-business-profiles-for-the-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2015/02/04/2014-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2014 Small Business Profiles For The States And Territories"
+                }
+            ],
+            "keyword": ["2014", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2013",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles for the States and Territories are an annual analysis of each state\u2019s small business activities. They provide information on small business employment, industry composition, small business borrowing, exporting, and survival rates, as well as business owner demographics. The profiles provide information for the 50 states, the District of Columbia, the U.S. territories, and the United States. Detailed historical data may be found in the Small Business Economy.",
+            "modified": "2022-12-22T15:43:00.865Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2016-02-001",
+            "issued": "2014-06-17",
+            "landingPage": "https://advocacy.sba.gov/2014/06/17/2013-small-business-profiles-for-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2014/06/17/2013-small-business-profiles-for-states-and-territories/",
+                    "title": "2013 Small Business Profiles For The States And Territories"
+                }
+            ],
+            "keyword": ["2013", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2012",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles for the States and Territories are an annual analysis of each state\u2019s small business activities. They provide information on small business employment, industry composition, small business borrowing, exporting, and survival rates, as well as business owner demographics. The profiles provide information for the 50 states, the District of Columbia, the U.S. territories, and the United States. Detailed historical data may be found in the Small Business Economy.",
+            "modified": "2022-12-22T15:44:26.284Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2016-02-056",
+            "issued": "2013-01-01",
+            "landingPage": "https://advocacy.sba.gov/2013/01/01/2012-small-business-profiles-for-the-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2013/01/01/2012-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2012 Small Business Profiles for the States and Territories"
+                }
+            ],
+            "keyword": ["2012", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2011",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles for the States and Territories are an annual analysis of each state\u2019s small business activities. They provide information on small business employment, industry composition, small business borrowing, exporting, and survival rates, as well as business owner demographics. The profiles provide information for the 50 states, the District of Columbia, the U.S. territories, and the United States. Detailed historical data may be found in the Small Business Economy.",
+            "modified": "2022-12-22T15:47:10.081Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2016-11-001",
+            "issued": "2012-01-01",
+            "landingPage": "https://advocacy.sba.gov/2012/01/01/2011-small-business-profiles-for-the-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "text/html",
+                    "title": "2011 Small Business Profiles for the States and Territories",
+                    "downloadURL": "https://advocacy.sba.gov/2012/01/01/2011-small-business-profiles-for-the-states-and-territories/"
+                }
+            ],
+            "keyword": ["2011", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2017",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual analysis of each state\u2019s small business activities. Each profile gathers the latest information from key federal data-gathering agencies to provide a snapshot of small business health and economic activity. This year\u2019s profiles report on state economic growth and employment; small business employment, industry composition, and turnover; plus business owner demographics and county-level employment change.",
+            "modified": "2022-12-22T15:48:20.310Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2017-08-001",
+            "issued": "2017-01-18",
+            "landingPage": "https://advocacy.sba.gov/2017/01/18/2017-small-business-profiles-for-the-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2017/01/18/2017-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2017 Small Business Profiles for the States and Territories"
+                }
+            ],
+            "keyword": ["2017", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2016",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles for the States and Territories are an annual analysis of each state\u2019s small business activities. They provide information on small business employment, industry composition, small business borrowing, exporting, and survival rates, as well as business owner demographics. The profiles provide information for the 50 states, the District of Columbia, the U.S. territories, and the United States. Detailed historical data may be found in the Small Business Economy.",
+            "modified": "2022-12-22T15:49:52.578Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2016-05-001",
+            "issued": "2016-03-09",
+            "landingPage": "https://advocacy.sba.gov/2016/03/09/2016-small-business-profiles-for-the-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2016/03/09/2016-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2016 Small Business Profiles for the States and Territories"
+                }
+            ],
+            "keyword": ["2016", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2018",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and small business by industry.",
+            "modified": "2022-12-22T15:50:54.353Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2018-05-001",
+            "issued": "2018-04-28",
+            "landingPage": "https://advocacy.sba.gov/2018/04/25/2018-small-business-profiles-for-the-states-and-territories/",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2018/04/25/2018-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2018 Small Business Profiles for the States and Territories"
+                }
+            ],
+            "keyword": ["2018", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Weekly Lending Reports",
+            "description": "SBA offers a variety of loan programs for very specific purposes. These reports detail weekly lending activity for SBA loan programs.",
+            "modified": "2020-01-24",
+            "accessLevel": "public",
+            "identifier": "SBA-OCA-2018-08-001",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua Dykema",
+                "hasEmail": "mailto:Joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/about-sba/sba-newsroom/weekly-lending-report",
+                    "title": "SBA Weekly Lending Reports",
+                    "description": "SBA offers a variety of loan programs for very specific purposes. These reports detail weekly lending activity for SBA loan programs."
+                }
+            ],
+            "keyword": ["SBA", "lending", "loan"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:001"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2019",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and self-employment by county, and small businesses by industry.",
+            "modified": "2022-12-22T15:33:48.988Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2019-05-001",
+            "issued": "2019-04-29",
+            "landingPage": "https://advocacy.sba.gov/2019/04/24/2019-small-business-profiles-for-the-states-and-territories/",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2019/04/24/2019-small-business-profiles-for-the-states-and-territories/",
+                    "title": "2019 Small Business Profiles for the States and Territories",
+                    "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and self-employment by county, and small businesses by industry."
+                }
+            ],
+            "keyword": ["2019", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2020",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and self-employment by county, and small businesses by industry.",
+            "modified": "2022-12-22T15:34:59.983Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2020-08-001",
+            "issued": "2020-05-20",
+            "landingPage": "https://advocacy.sba.gov/2020/05/20/2020-small-business-profiles-for-the-states-and-territories/?utm_medium=email&utm_source=govdelivery",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "text/html",
+                    "title": "2020 Small Business Profiles for the States and Territories",
+                    "downloadURL": "https://advocacy.sba.gov/2020/05/20/2020-small-business-profiles-for-the-states-and-territories/?utm_medium=email&utm_source=govdelivery"
+                }
+            ],
+            "keyword": ["2020", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2021",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and self-employment by county, and small businesses by industry.",
+            "modified": "2022-09-15T20:39:42.823Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2021-11-001",
+            "issued": "2021-08-30",
+            "landingPage": "https://advocacy.sba.gov/2021/08/30/2021-small-business-profiles-for-the-states-the-district-of-columbia-and-the-u-s/",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2021/08/30/2021-small-business-profiles-for-the-states-the-district-of-columbia-and-the-u-s/",
+                    "title": "2021 Small Business Profiles For The States, The District Of Columbia, And The U.S."
+                }
+            ],
+            "keyword": ["2021", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Profiles for the States and Territories - 2022",
+            "description": "The Office of Advocacy\u2019s Small Business Profiles are an annual portrait of each state\u2019s small business. They gather the latest federal data into state-by-state snapshots of small business health and economic activity. Limited economic data is also provided for the U.S. territories.  This year\u2019s profiles report on state economic growth and employment, income and finance, employer business owner demographics, turnover among establishments with employees, international trade, small business employment by industry and county, and self-employment by county, and small businesses by industry.",
+            "modified": "2022-12-22T15:38:28.751Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2022-09-002",
+            "issued": "2022-08-31",
+            "landingPage": "https://advocacy.sba.gov/2022/08/31/2022-small-business-profiles-for-the-states-territories-and-nation/",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Dan Wilmoth",
+                "hasEmail": "mailto:daniel.wilmoth@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://advocacy.sba.gov/2022/08/31/2022-small-business-profiles-for-the-states-territories-and-nation/",
+                    "title": "2022 Small Business Profiles For The States, Territories, And Nation"
+                }
+            ],
+            "keyword": ["2022", "SBA", "Territories", "all states", "borrowing", "exporting", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Size Standards",
+            "description": "Certain government programs, such as SBA loan programs and contracting opportunities, are reserved for small business concerns. In order to qualify, businesses must satisfy SBA's definition of a small business concern, along with the size standards for small business",
+            "modified": "2019-04-01",
+            "accessLevel": "public",
+            "identifier": "SBA-GCBD-2014-08-001",
+            "landingPage": "https://www.sba.gov/document/support--table-size-standards",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Kimberly A. Russell",
+                "hasEmail": "mailto:Kimberly.Russell@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/document/support--table-size-standards",
+                    "title": "Small Business size standards"
+                }
+            ],
+            "keyword": ["SBA", "Size", "small business", "standards"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:012"],
+            "theme": ["SBA", "Size", "standards", "small business", "SBA registered"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Women-owned employer and nonemployer firm data FY 2017",
+            "description": "\u201cWe cannot measure what we cannot count.\u201d\nNWBC entered into an Interagency Agreement with the U.S. Census Bureau in FY 2021 to fund the development of custom tabulations on women-owned employer and nonemployer firms. The unique custom tabulations, which utilize data from both the Annual Business Survey (ABS) and the Nonemployer Statistics by Demographics (NES-D), are featured here as raw data to serve primarily as a resource for researchers and practitioners.\nTo learn more about the ABS and NES-D, we encourage you to visit the U.S. Census Bureau\u2019s website at: https://www.census.gov/.\nSources:\n 2018 Business Survey, date year 2017 --https://www.census.gov/programs-surveys/abs.html\n2017 New Annual Nonemployer Demographics Statistics--https://www.census.gov/programs-surveys/abs/data/nesd.html",
+            "modified": "2022-09-15T16:29:37.249Z",
+            "accessLevel": "public",
+            "identifier": "SBA-NWBC-2022-09-001",
+            "license": "https://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "NATIONAL WOMEN'S BUSINESS COUNCIL\ufeff",
+                "hasEmail": "mailto:info@nwbc.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/9824424b-ca0c-4405-bf94-b05b609a4019/download/1a-table_usa.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by State and Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/ecd31a79-ef16-4121-97ad-b6bdfef36773/download/1b-table_state.xls"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Metropolitan Statistical Area (MSA)...",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/fc0a324d-7373-4d3a-937e-0b9345344332/download/1c-table_msa.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Industry and Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/7b80efad-0895-4295-88d2-ae01ca96becd/download/2-table_naics.xls"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Ethnicity and Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/002bfcbb-f67a-4998-a45b-e7837913a909/download/3b-table_ethnicity.xls"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Veteran Status and Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/80784d34-f3f8-4f08-b894-85e7f56f3b96/download/3c-table_veteran.xls"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Owners by Owner Age and Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/a16a6aea-7853-402f-8ae0-c6faa5e3b271/download/3d-table_age.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Owners by Owner Citizenship and Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/162e035b-2648-4609-bc5e-5ff97aba8f08/download/3e-table_citizen.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms with Employees by Employment Size and Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/2dbcdaa3-bec6-4c25-9420-e056f373895e/download/3-table_employment_size.xls"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Owner Race and Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/4c630cbd-1430-4d55-8fc2-361f316fce21/download/3-table_race.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.ms-excel",
+                    "title": "Firms by Revenue Size and Owner Sex",
+                    "downloadURL": "https://data.sba.gov/dataset/6779f4be-daea-439d-b385-09cc8bb4b7a2/resource/fb8896a0-076f-4782-89ad-925f6118476a/download/5-table_revsize.xls"
+                }
+            ],
+            "keyword": ["NWBC", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Dynamic Small Business Search (DSBS)",
+            "description": "The Small Business Administration maintains the Dynamic Small Business Search (DSBS) database. As a small business registers in the System for Award Management, there is an opportunity to fill out the small business profile. The information provided populates DSBS. DSBS is another tool contracting officers use to identify potential small business contractors for upcoming contracting opportunities. Small businesses can also use DSBS to identify other small businesses for teaming and joint venturing.",
+            "modified": "2023-01-30T22:39:23.332Z",
+            "accessLevel": "public",
+            "identifier": "SBA-GCBD-2013-11-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Terrance N. Lewis,",
+                "hasEmail": "mailto:OCEActions@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://dsbs.sba.gov/search/dsp_dsbs.cfm",
+                    "title": "DSBS"
+                }
+            ],
+            "keyword": ["Business name", "Company name", "Organization name"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"],
+            "theme": ["search tool", "user controlled", "dynamic", "business information", "SBA registered"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "U.S. Small Business HUBZone Nonmetropolitan Counties",
+            "description": "HUBZone Qualified Nonmetropolitan Counties",
+            "modified": "2023-01-30T22:40:10.189Z",
+            "accessLevel": "public",
+            "identifier": "SBA-GCBD-2015-02-003",
+            "landingPage": "https://maps.certify.sba.gov/hubzone/map",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Kimberly A. Russell",
+                "hasEmail": "mailto:Kimberly.Russell@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "January 2018 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/Jan_2018_County_Designations_ACS_DDA.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "July 2017 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/July_2017_County_Designations_BLS.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "March 2017 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/March_2017_County_Designations_ACS_DDA.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "July 2016 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/July_2016_County_Designations_0.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "January 2015 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/January2015_CountyDesignationsIncome.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "January 2014 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/January2014_CountyDesignationsIncome.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "May 2014 County Designations",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/May2014_CountyDesignationsBLS.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "Nonmetropolitan Counties Unemployment 2014",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/2015_NMC-unemploymentBLS2014.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "format": "XLSX",
+                    "title": "County Designations Income 2013",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/CountyDesignationsIncome_1-1-13.xlsx"
+                }
+            ],
+            "keyword": ["Government Contracting", "HUBZone", "Historically Underutilized Business Zone", "Non-metropolitan County", "Nonmetropolitan County", "QNMC"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "language": ["en-US"],
+            "theme": ["HUBZone Maps"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Office Of Capital Access Interactive Dashboards",
+            "description": "This dashboard provides SBA stakeholders links to several public SBA Office of Capital Access reports.",
+            "modified": "2023-01-31T14:30:25.681Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCA-2023-01-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Joshua Dykema",
+                "hasEmail": "mailto:joshua.dykema@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://careports.sba.gov/views/7a504Summary/Report?%3Aembed=yes&%3Atoolbar=no",
+                    "title": "7(a) and 504 summary report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://careports.sba.gov/views/MicroloanSummaryReport/Report?%3Aembed=yes&%3Atoolbar=no",
+                    "title": "Microloans Summary Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://careports.sba.gov/views/DisasterSummary/Report?%3Aembed=yes&%3Atoolbar=no",
+                    "title": "Disaster Summary Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://careports.sba.gov/views/StateCountyProgramSummary/Report?%3Aembed=yes&%3Atoolbar=no",
+                    "title": "State-County Program Summary Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://careports.sba.gov/views/7a504LenderReport/LenderReport?%3Aembed=yes&%3Atoolbar=no",
+                    "title": "7(a) & 504 Lender Report"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://careports.sba.gov/views/MicroloanLenderReport/Report?%3Aembed=yes&%3Atoolbar=no",
+                    "title": "Microloans Lender Report"
+                }
+            ],
+            "keyword": ["Dashboard", "Office of capital access", "SBA"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:001"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Data Resources: U.S. Federal Government",
+            "description": "This list includes major sources of data collected by the U.S. government and available for research on small business. It includes business data from private, nonprofit, university, international, and other sources.",
+            "modified": "2023-01-30T23:05:21.334Z",
+            "accessLevel": "public",
+            "identifier": "SBA-ADVO-2015-11-056",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Brian Headd",
+                "hasEmail": "mailto:brian.headd@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://cdn.advocacy.sba.gov/wp-content/uploads/2022/08/09110405/Advocacy-Small-Business-Data-Resources_8.1.22-508c.pdf",
+                    "title": "Small Business Data Resources: Other than U.S. Federal Government"
+                }
+            ],
+            "keyword": ["SBA", "international", "nonprofit", "other sources", "private", "university"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA District Offices",
+            "description": "SBA\u2019s District Offices are responsible for the delivery of SBA's many programs and services throughout the country. This list includes all SBA District Offices.",
+            "modified": "2023-01-30T23:07:03.980Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCPL-2016-05-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Jeffrey H. Davis",
+                "hasEmail": "mailto:Jeffrey.Davis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/about-sba/sba-locations/sba-district-offices",
+                    "title": "SBA district offices"
+                }
+            ],
+            "keyword": ["District", "District Offices", "SBA", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Disaster Field Office",
+            "description": "SBA's Disaster Field Office across the country that offers counseling and financial help to those who are rebuilding their homes and businesses.",
+            "modified": "2023-01-30T23:07:58.580Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCPL-2016-05-003",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Jeffrey H. Davis",
+                "hasEmail": "mailto:Jeffrey.Davis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/about-sba/sba-locations/disaster-field-operations-centers",
+                    "title": "Disaster Field office"
+                }
+            ],
+            "keyword": ["Disaster", "Disaster Field Office", "Field", "SBA", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SCORE Chapter",
+            "description": "The SCORE Association, supported by SBA, is a nonprofit association of thousands of volunteer business counselors throughout the U.S. and its territories. SCORE members are trained to serve as counselors, advisors and mentors to aspiring entrepreneurs and business owners. List of all SCORE chapters in all states can be found.",
+            "modified": "2023-01-30T22:35:04.742Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OED-2016-05-003",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Kimberly Russell",
+                "hasEmail": "mailto:edmis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/resource-partners/score-business-mentoring",
+                    "title": "SCORE Chapter"
+                }
+            ],
+            "keyword": ["SBA", "SCORE", "SCORE Association", "SCORE Chapter", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Small Business Development Center",
+            "description": "Small Business Development Centers (SBDCs) provide assistance to small businesses and aspiring entrepreneurs throughout the United States and its territories. SBDCs help entrepreneurs realize the dream of business ownership and help existing businesses remain competitive in a complex, ever-changing global marketplace. SBDCs are hosted by leading universities and state economic development agencies, and funded in part through a partnership with SBA.",
+            "modified": "2023-01-30T23:11:02.167Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OED-2016-05-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Kimberly Russell",
+                "hasEmail": "mailto:edmis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/resource-partners/small-business-development-centers-sbdc",
+                    "title": "Small Business Development Center"
+                }
+            ],
+            "keyword": ["SBA", "SBDC", "Small Business Development Center", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Women's Business Center",
+            "description": "Women's Business Centers (WBCs) represent a national network of nearly 100 educational centers throughout the United States and its territories, which are designed to assist women in starting and growing small businesses. WBCs seek to \"level the playing field\" for women entrepreneurs, who still face unique obstacles in the business world. SBA\u2019s Office of Women\u2019s Business Ownership (OWBO) oversees the WBC network, which provides entrepreneurs (especially women who are economically or socially disadvantaged) comprehensive training and counseling on a variety of topics in several languages",
+            "modified": "2023-01-30T23:11:45.845Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OED-2016-05-002",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Kimberly Russell",
+                "hasEmail": "mailto:edmis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/resource-partners/womens-business-centers",
+                    "title": "Women's Business Center"
+                }
+            ],
+            "keyword": ["Business Centers", "OWBO", "SBA", "WBC", "Women", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "U.S. Export Assistance Center",
+            "description": "U.S. Export Assistance Centers provide the help small businesses need to go global. These centers are located in major metropolitan areas throughout the United States. This list includes all U.S. Export Assistance Centers.",
+            "modified": "2023-01-30T22:37:30.388Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OIT-2016-05-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Gregory Henry",
+                "hasEmail": "mailto:gregory.henry@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/export-trade-assistance/us-export-assistance-centers",
+                    "title": "U.S. Export Assistance Center"
+                }
+            ],
+            "keyword": ["SBA", "Trade Finance Specialist", "U.S. Export Assistance Center", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Veteran's Business Outreach Center",
+            "description": "The Veterans Business Outreach Program (VBOP) is designed to provide entrepreneurial development services such as business training, counseling and mentoring, and referrals for eligible veterans owning or considering starting a small business. The SBA has 15 organizations participating in this cooperative agreement and serving as Veterans Business Outreach Centers (VBOC).",
+            "modified": "2023-01-30T23:08:44.353Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCPL-2016-05-004",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Jeffrey H. Davis",
+                "hasEmail": "mailto:Jeffrey.Davis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/resource-partners/veterans-business-outreach-center-vboc-program",
+                    "title": "Veterans Business Outreach Program"
+                }
+            ],
+            "keyword": ["SBA", "VBOC", "Veterans Business Outreach Program", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Procurement Technical Assistance Centers",
+            "description": "Procurement Technical Assistance Centers (PTACs) provide local, in-person counseling and training services for you, the small business owner. They are designed to provide technical assistance to businesses that want to sell products and services to federal, state, and/or local governments. PTAC services are available either free of charge, or at a nominal cost. PTACs are part of the Procurement Technical Assistance Program, which is administered by the Defense Logistics Agency.",
+            "modified": "2023-01-30T23:09:27.285Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCPL-2016-05-006",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Jeffrey H. Davis",
+                "hasEmail": "mailto:Jeffrey.Davis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/federal-contracting-assistance#section-header-0",
+                    "title": "Procurement Technical Assistance Centers"
+                }
+            ],
+            "keyword": ["PTACs", "Procurement Technical Assistance Centers", "SBA", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "Regional Innovation Clusters",
+            "description": "The Regional Innovation Clusters serve a diverse group of sectors and geographies. Three of the initial pilot clusters, termed Advanced Defense Technology clusters, are specifically focused on meeting the needs of the defense industry. The Wood Products Cluster, debuted in 2015, supports the White House\u2019s Partnerships for Opportunity and Workforce and Economic Revitalization (POWER) Initiative for coal communities. All of the clusters support small businesses by fostering a synergistic network of small and large businesses, university researchers, regional economic organizations, stakeholders, and investors, while providing matchmaking, business training, counseling, mentoring, and other services to help small businesses expand and grow.",
+            "modified": "2023-01-30T23:10:11.598Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCPL-2016-05-007",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Jeffrey H. Davis",
+                "hasEmail": "mailto:Jeffrey.Davis@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/regional-innovation-clusters",
+                    "title": "Regional Innovation Clusters"
+                }
+            ],
+            "keyword": ["Regional Innovation Clusters", "SBA", "all states", "states"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:031"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "State Licenses & Permits",
+            "description": "Starting a business? Confused about whether you need a business license or permit?\r\n \r\nVirtually every business needs some form of license or permit to operate legally. However, licensing and permit requirements vary depending on the type of business you are operating, where it\u2019s located, and what government rules apply.\r\n \r\nTo help you identify the specific licenses or permits your business may need, simply select a state from the list below to learn about specific license and permit requirements in the area where your business is located.",
+            "modified": "2023-01-30T23:06:14.251Z",
+            "accessLevel": "public",
+            "identifier": "SBA-OCIO-2015-05-001",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Asghar Noor",
+                "hasEmail": "mailto:asghar.noor@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/business-guide/launch-your-business/apply-licenses-permits",
+                    "title": "Business Licenses and Permits"
+                }
+            ],
+            "keyword": ["Licenses", "Permits", "Small Business", "State"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:001"],
+            "language": ["en-US"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "U.S. Small Business HUBZone Qualified Census Tracts",
+            "description": "HUBZone Designated Area based on the Department of Housing and Urban Development (HUD) designated Qualified Census Tracts (QCTs).  Watch HUBZone mini-primer on Understanding HUBZone Designations for additional information.",
+            "modified": "2023-01-30T20:57:04.550Z",
+            "accessLevel": "public",
+            "identifier": "SBA-GCBD-2015-02-001",
+            "landingPage": "https://maps.certify.sba.gov/hubzone/map",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "rights": "true",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "accrualPeriodicity": "R/P10Y",
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Kimberly A. Russell",
+                "hasEmail": "mailto:Kimberly.Russell@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Census Tract Designations 2012",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/2012_TractDesignations.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Census Tract Designations 2015",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/2015_TractDesignations.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Census Tract Designations 2016",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/2016-TractDesignations.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Census Tract Designations 2017",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/2017-TractDesignations.xlsx"
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+                    "title": "Census Tract Designations 2018",
+                    "downloadURL": "https://saedevadlsablob01.blob.core.windows.net/ckanregistry/2018-TractDesignations.xlsx"
+                }
+            ],
+            "keyword": ["Government Contracting", "HUBZone", "Historically Underutilized Business Zone", "QCT", "Qualified Census Tracts"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:012"],
+            "language": ["en-US"],
+            "theme": ["HUBZone Maps"]
+        }, {
+            "@type": "dcat:Dataset",
+            "title": "SBA Local Assistance Lookup",
+            "description": "This list includes all SBA offices and Resource Partner office where small business owners across the country can go to receive business assistance, counseling and or training.",
+            "modified": "2020-04-13",
+            "accessLevel": "public",
+            "identifier": "SBA-OED-2019-08-001",
+            "landingPage": "https://www.sba.gov/local-assistance",
+            "license": "http://www.usa.gov/publicdomain/label/1.0/",
+            "publisher": {
+                "@type": "org:Organization",
+                "name": "Small Business Administration"
+            },
+            "contactPoint": {
+                "@type": "vcard:Contact",
+                "fn": "Ryan C. Hillard",
+                "hasEmail": "mailto:Ryan.Hillard@sba.gov"
+            },
+            "distribution": [{
+                    "@type": "dcat:Distribution",
+                    "accessURL": "https://www.sba.gov/local-assistance/find/",
+                    "title": "SBA Local Assistance Lookup",
+                    "description": "This list includes all SBA offices and Resource Partner office where small business owners across the country can go to receive business assistance, counseling and or training."
+                }, {
+                    "@type": "dcat:Distribution",
+                    "mediaType": "application/json",
+                    "title": "SBA Local Assistance Lookup",
+                    "description": "This list includes all SBA offices and Resource Partner office where small business owners across the country can go to receive business assistance, counseling and or training.",
+                    "downloadURL": "https://www.sba.gov/api/content/search/offices.json"
+                }
+            ],
+            "keyword": ["SBA", "local assistance", "offices"],
+            "bureauCode": ["028:00"],
+            "programCode": ["028:000"],
+            "theme": ["search tool", "user controlled", "dynamic", "business information", "SBA registered"]
+        }
+    ]
+}
