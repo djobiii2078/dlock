@@ -40,6 +40,8 @@ void * reader(void *period)
 
 	clock_t start = clock();
 	uint64_t cycles_start = __rdtsc();
+	float global_lock_time = 0.0;
+	uint64_t global_lock_cycles = 0; 
 	_mm_lfence();
 
 	while(!writers_ended){
@@ -79,6 +81,8 @@ void * reader(void *period)
 						((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_exit_start))/CLOCKS_PER_SEC,
 						(cycles_lock_exit_end-cycles_start_reader),
 						((cycles_lock_exit_end-cycles_lock_exit_begin)+(cycles_end_lock_begin-cycles_start_reader))); 
+		global_lock_time += ((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_exit_start))/CLOCKS_PER_SEC;
+		global_lock_cycles += ((cycles_lock_exit_end-cycles_lock_exit_begin)+(cycles_end_lock_begin-cycles_start_reader));
 		#endif 
 
 	}
@@ -86,8 +90,8 @@ void * reader(void *period)
 	uint64_t cycles_end = __rdtsc();
 	_mm_lfence(); 
 
-	printf("ReaderFinalMetric execTime: %ld cycles:%ld", 
-			(end-start)/CLOCKS_PER_SEC,(cycles_end-cycles_start));
+	printf("ReaderFinalMetric execTime: %ld cycles:%ld globallocktime:%.9f globallockcycles:%ld\n", 
+			(end-start)/CLOCKS_PER_SEC,(cycles_end-cycles_start),global_lock_time,global_lock_cycles);
 } 
 
 
@@ -123,6 +127,9 @@ void * writer(void *nb_ops)
 	//with a lock here 
 	#ifdef LOCK_WRITER_IMPACT
 	clock_t writer_time = clock();
+	float global_lock_time = 0.0;
+	float global_lock_cycles = 0.0; 
+	uint64_t start_cycles = __rdtsc();
 	#endif 
 	for(counter = 0; counter < NBPAGES; counter++)
 	{
@@ -182,16 +189,21 @@ void * writer(void *nb_ops)
 			#endif 
 
 			printf("Writerthread id-[%ld]ops = %ld/%ld\n", thread_id, processed_ops, *((unsigned long *) nb_ops)); 
+
+			global_lock_time += (((lock_end-lock_begin)/CLOCKS_PER_SEC)+((lock_exit_end-lock_exit_begin)/CLOCKS_PER_SEC));
+			global_lock_cycles += ((cycles_stop - cycles_start)+(cycles_exit-cycles_exit_start));
+		
 		}
 
 	}
 
 	#ifdef LOCK_WRITER_IMPACT
 	clock_t writer_time_end = clock();
+	uint64_t end_cycles = __rdtsc();
 	#endif 
 
-	printf("WriterFinalMetric exectime:%ld cycles:%ld",(writer_time_end-writer_time)/CLOCKS_PER_SEC);
-	exit(0); 
+	printf("WriterFinalMetric exectime:%ld cycles:%ld global globallocktime:%.9f globallockcycles:%ld\n",(writer_time_end-writer_time)/CLOCKS_PER_SEC,(end_cycles-start_cycles),global_lock_time,global_lock_cycles);
+	//exit(0); 
 
 
 }
@@ -287,7 +299,7 @@ int main(int argc, char **argv)
 	pthread_mutex_destroy(&lock_processed_ops);
 	uint64_t finish_cycles = __rdtsc();
 
-	printf("\n Finished \n===> Exectime:%ld  cycles:%ld\n",
+	printf("\n Finished Exectime:%ld  cycles:%ld\n",
 				(clock()-start_program)/CLOCKS_PER_SEC,
 				(finish_cycles-cycles)); 
 
