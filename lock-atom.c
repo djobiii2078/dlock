@@ -4,7 +4,7 @@
 
 #include<x86intrin.h> 
 #include<stdio.h>
-
+#include<stdatomic.h>
 #include<stdlib.h>
 #include<pthread.h>
 #include<string.h>
@@ -63,7 +63,7 @@ void * reader(void *period)
 		uint64_t cycles_end_lock_begin = __rdtsc();
 		#endif 
 
-		value=atomic_load(processed_ops,memory_order_seq_cst);
+		value=atomic_load(&processed_ops);
 		printf("Reader processed_ops = %ld",processed_ops); 
 
 		#ifdef LOCK_WRITER_IMPACT
@@ -76,12 +76,12 @@ void * reader(void *period)
 		#ifdef LOCK_WRITER_IMPACT
 		clock_t lock_exit_end = clock();
 		uint64_t cycles_lock_exit_end = __rdtsc();
-		printf("ReaderInnerMetric execTime:%ld locktime:%ld execcyles:%ld lockcycles:%ld\n", 
-						(lock_exit_end-lock_begin_reader)/CLOCKS_PER_SEC,
-						((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_begin_reader))/CLOCKS_PER_SEC,
+		printf("ReaderInnerMetric execTime:%.9f locktime:%.9f execcyles:%ld lockcycles:%ld\n", 
+						1.0*(lock_exit_end-lock_begin_reader)/CLOCKS_PER_SEC,
+						1.0*((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_begin_reader))/CLOCKS_PER_SEC,
 						(cycles_lock_exit_end-cycles_start_reader),
 						((cycles_lock_exit_end-cycles_start_reader)+(cycles_end_lock_begin-cycles_start_reader))); 
-		global_lock_time += ((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_begin_reader))/CLOCKS_PER_SEC;
+		global_lock_time += 1.0*((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_begin_reader))/CLOCKS_PER_SEC;
 		global_lock_cycles += ((cycles_lock_exit_end-cycles_start_reader)+(cycles_end_lock_begin-cycles_start_reader));
 		#endif 
 
@@ -128,7 +128,7 @@ void * writer(void *nb_ops)
 	#ifdef LOCK_WRITER_IMPACT
 	clock_t writer_time = clock();
 	float global_lock_time = 0.0;
-	float global_lock_cycles = 0.0; 
+	uint64_t global_lock_cycles = 0; 
 	uint64_t start_cycles = __rdtsc();
 	#endif 
 	for(counter = 0; counter < NBPAGES; counter++)
@@ -159,7 +159,7 @@ void * writer(void *nb_ops)
 			#endif 
 
 			//processed_ops +=1;
-			__atomic_fetch_add(&processed_ops, 1, __ATOMIC_SEQ_CST)
+			__atomic_fetch_add(&processed_ops, 1, __ATOMIC_SEQ_CST);
 
 			#ifdef LOCK_WRITER_IMPACT
 			clock_t lock_exit_begin = clock();
@@ -176,9 +176,9 @@ void * writer(void *nb_ops)
 			#endif 
 
 			#ifdef LOCK_WRITER_IMPACT
-			printf("Writer exectime:%ld locktime:%ld execcycles:%ld lockcycles:%ld\n",
-						(lock_exit_end-lock_begin_writer)/CLOCKS_PER_SEC,
-						(((lock_end-lock_begin)/CLOCKS_PER_SEC)+((lock_exit_end-lock_begin)/CLOCKS_PER_SEC)),
+			printf("Writer exectime:%.9f locktime:%.9f execcycles:%ld lockcycles:%ld\n",
+						1.0*(lock_exit_end-lock_begin_writer)/CLOCKS_PER_SEC,
+						((1.0*(lock_end-lock_begin)/CLOCKS_PER_SEC)+(1.0*(lock_exit_end-lock_begin)/CLOCKS_PER_SEC)),
 						(cycles_start_writer-cycles_exit),
 						((cycles_stop - cycles_start)+(cycles_exit-cycles_start))
 						); 
@@ -186,7 +186,7 @@ void * writer(void *nb_ops)
 
 			printf("Writerthread id-[%ld]ops = %ld/%ld\n", thread_id, processed_ops, *((unsigned long *) nb_ops)); 
 
-			global_lock_time += (((lock_end-lock_begin)/CLOCKS_PER_SEC)+((lock_exit_end-lock_begin)/CLOCKS_PER_SEC));
+			global_lock_time += ((1.0*(lock_end-lock_begin)/CLOCKS_PER_SEC)+(1.0*(lock_exit_end-lock_begin)/CLOCKS_PER_SEC));
 			global_lock_cycles += ((cycles_stop - cycles_start)+(cycles_exit-cycles_start));
 		
 		}
@@ -295,8 +295,8 @@ int main(int argc, char **argv)
 	pthread_mutex_destroy(&lock_processed_ops);
 	uint64_t finish_cycles = __rdtsc();
 
-	printf("\n Finished Exectime:%ld  cycles:%ld\n",
-				(clock()-start_program)/CLOCKS_PER_SEC,
+	printf("\n Finished Exectime:%.9f  cycles:%ld\n",
+				1.0*(clock()-start_program)/CLOCKS_PER_SEC,
 				(finish_cycles-cycles)); 
 
 	return 0; 

@@ -19,7 +19,7 @@
 #define PERIOD 1
 
 #define LOCK_WRITER_IMPACT 0
-#define NOLOCK 0 
+//#define NOLOCK 0 
 
 pthread_mutex_t lock_processed_ops; 
 
@@ -54,9 +54,9 @@ void * reader(void *period)
 		#endif 
 
 		
-		#ifndef NOLOCK
+//		#ifndef NOLOCK
 		pthread_mutex_lock(&lock_processed_ops);
-		#endif
+//		#endif
 		#ifdef LOCK_WRITER_IMPACT
 		clock_t lock_begin_end = clock();
 		uint64_t cycles_end_lock_begin = __rdtsc();
@@ -69,19 +69,19 @@ void * reader(void *period)
 		uint64_t cycles_lock_exit_begin = __rdtsc();
 		#endif 
 
-		#ifndef NOLOCK
+//		#ifndef NOLOCK
 		pthread_mutex_unlock(&lock_processed_ops);
-		#endif 
+//		#endif 
 
 		#ifdef LOCK_WRITER_IMPACT
 		clock_t lock_exit_end = clock();
 		uint64_t cycles_lock_exit_end = __rdtsc();
-		printf("ReaderInnerMetric execTime:%ld locktime:%ld execcyles:%ld lockcycles:%ld\n", 
-						(lock_exit_end-lock_begin_reader)/CLOCKS_PER_SEC,
-						((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_exit_start))/CLOCKS_PER_SEC,
+		printf("ReaderInnerMetric execTime:%.9f locktime:%.9f execcyles:%ld lockcycles:%ld\n", 
+						1.0*(lock_exit_end-lock_begin_reader)/CLOCKS_PER_SEC,
+						1.0*((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_exit_start))/CLOCKS_PER_SEC,
 						(cycles_lock_exit_end-cycles_start_reader),
 						((cycles_lock_exit_end-cycles_lock_exit_begin)+(cycles_end_lock_begin-cycles_start_reader))); 
-		global_lock_time += ((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_exit_start))/CLOCKS_PER_SEC;
+		global_lock_time += 1.0*((lock_begin_end-lock_begin_reader)+(lock_exit_end-lock_exit_start))/CLOCKS_PER_SEC;
 		global_lock_cycles += ((cycles_lock_exit_end-cycles_lock_exit_begin)+(cycles_end_lock_begin-cycles_start_reader));
 		#endif 
 
@@ -128,7 +128,7 @@ void * writer(void *nb_ops)
 	#ifdef LOCK_WRITER_IMPACT
 	clock_t writer_time = clock();
 	float global_lock_time = 0.0;
-	float global_lock_cycles = 0.0; 
+	uint64_t global_lock_cycles = 0; 
 	uint64_t start_cycles = __rdtsc();
 	#endif 
 	for(counter = 0; counter < NBPAGES; counter++)
@@ -151,9 +151,9 @@ void * writer(void *nb_ops)
 
 			#endif 
 
-			#ifndef NOLOCK
+//			#ifndef NOLOCK
 			pthread_mutex_lock(&lock_processed_ops);
-			#endif 
+//			#endif 
 
 			#ifdef LOCK_WRITER_IMPACT
 			clock_t lock_end = clock();
@@ -169,9 +169,9 @@ void * writer(void *nb_ops)
 			_mm_lfence();
 			#endif  
 
-			#ifndef NOLOCK
+//			#ifndef NOLOCK
 			pthread_mutex_unlock(&lock_processed_ops); 
-			#endif 
+//			#endif 
 
 			#ifdef LOCK_WRITER_IMPACT
 			clock_t lock_exit_end = clock();
@@ -180,9 +180,9 @@ void * writer(void *nb_ops)
 			#endif 
 
 			#ifdef LOCK_WRITER_IMPACT
-			printf("Writer exectime:%ld locktime:%ld execcycles:%ld lockcycles:%ld\n",
-						(lock_exit_end-lock_begin_writer)/CLOCKS_PER_SEC,
-						(((lock_end-lock_begin)/CLOCKS_PER_SEC)+((lock_exit_end-lock_exit_begin)/CLOCKS_PER_SEC)),
+			printf("Writer exectime:%.9f locktime:%.9f execcycles:%ld lockcycles:%ld\n",
+						1.0*(lock_exit_end-lock_begin_writer)/CLOCKS_PER_SEC,
+						((1.0*(lock_end-lock_begin)/CLOCKS_PER_SEC)+(1.0*(lock_exit_end-lock_exit_begin)/CLOCKS_PER_SEC)),
 						(cycles_start_writer-cycles_exit),
 						((cycles_stop - cycles_start)+(cycles_exit-cycles_exit_start))
 						); 
@@ -190,7 +190,7 @@ void * writer(void *nb_ops)
 
 			printf("Writerthread id-[%ld]ops = %ld/%ld\n", thread_id, processed_ops, *((unsigned long *) nb_ops)); 
 
-			global_lock_time += (((lock_end-lock_begin)/CLOCKS_PER_SEC)+((lock_exit_end-lock_exit_begin)/CLOCKS_PER_SEC));
+			global_lock_time += (1.0*((lock_end-lock_begin)/CLOCKS_PER_SEC)+((lock_exit_end-lock_exit_begin)/CLOCKS_PER_SEC));
 			global_lock_cycles += ((cycles_stop - cycles_start)+(cycles_exit-cycles_exit_start));
 		
 		}
@@ -202,7 +202,7 @@ void * writer(void *nb_ops)
 	uint64_t end_cycles = __rdtsc();
 	#endif 
 
-	printf("WriterFinalMetric exectime:%ld cycles:%ld global globallocktime:%.9f globallockcycles:%ld\n",(writer_time_end-writer_time)/CLOCKS_PER_SEC,(end_cycles-start_cycles),global_lock_time,global_lock_cycles);
+	printf("WriterFinalMetric exectime:%ld cycles:%ld globallocktime:%.9f globallockcycles:%ld\n",(writer_time_end-writer_time)/CLOCKS_PER_SEC,(end_cycles-start_cycles),global_lock_time,global_lock_cycles);
 	//exit(0); 
 
 
@@ -299,8 +299,8 @@ int main(int argc, char **argv)
 	pthread_mutex_destroy(&lock_processed_ops);
 	uint64_t finish_cycles = __rdtsc();
 
-	printf("\n Finished Exectime:%ld  cycles:%ld\n",
-				(clock()-start_program)/CLOCKS_PER_SEC,
+	printf("\n Finished Exectime:%.9f  cycles:%ld\n",
+				1.0*(clock()-start_program)/CLOCKS_PER_SEC,
 				(finish_cycles-cycles)); 
 
 	return 0; 
